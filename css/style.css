@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+:root
+{
+    --clr: #0ab3ff
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(6, 24, 58) ;
+}
+form{
+    background: rgb(30, 62, 122);
+    padding: 60px 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+form h2{
+    color: aliceblue;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25cm;
+    letter-spacing: 0.1cm;
+     margin-bottom: 50px;
+}
+.inputBox{
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+.inputBox input{
+    position: relative;
+     
+    width: 300px;
+    padding: 10px 0 ;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    color:#fff
+    font-size: 1cm;
+    text-transform: 0.15cm;
+    letter-spacing: 0.15cm;
+}
+.inputBox  label{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+    text-transform: uppercase;
+}
+.inputBox label span{
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05cm;
+    transition: 0.2s ease-in-out;
+}
+.inputBox input:focus ~ label span,
+.inputBox input:valid ~ label span
+{
+    color: var(--clr);
+    letter-spacing: 0.15cm;
+    transform: translateY();
+}
+.inputBox input:focus,
+.inputBox input:valid
+{
+    border-bottom: 2px solid var(--clr);
+}
+.inputBox input[type="submit"]
+{
+    background: var(--clr);
+    border:none;
+    padding: 15px;
+    border-radius: 50px;
+    color: #1c2630;
+    font-weight: 600;
+    font-size: 1.15cm;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.inputBox input[type="submit"]:hover
+{
+    letter-spacing: 0.35cm;
+}
+form p{
+    color: #fff;
+    text-transform: uppercase;
+}
+form p a{
+    color: var(--clr);
+    font-weight: 500;
+    text-decoration: none;
+}
+

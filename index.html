@@ -7,6 +7,37 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <h2>New Account</h2>
+    
+     <form>
+        <h2 >New Account</h2>
+        <div class="inputBox">
+            <input type="text" required>
+            <label>User Name</label>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+        </div>
+        <div class="inputBox">
+            <input type="Password" required>
+            <label>create &nbsp Password</label>
+        </div>
+        <div class="inputBox">
+            <input type="Password" required>
+            <label>Confirm &nbsp Password</label>
+             <div class="inputBox">
+                <input type="submit" value="Create">
+             </div>
+        </div>
+        <p>Alraedy have an account ??? <a href="#">Login</a></p>
+     </form>
+     <script>
+        let label = document.querySelectorAll('label').
+        forEach(Label =>{
+        label.innerHTML = label.innerText.split('').map
+        ((Letters, i) => `<span style="transition-delay: $
+        {i * 50}ms">&{letters}</span>`).join('');
+        });
+     </script>
 </body>
 </html>
